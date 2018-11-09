@@ -9,7 +9,7 @@ import {
 import firebase from '../lib/firebase';
 import * as fn from '../lib/funcionesgenerales';
 
-import AñoMes from './añoMes'
+import AñoMes from './anoMes'
 
 export default class AñosMeses extends Component {
 
