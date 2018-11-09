@@ -17,7 +17,7 @@ import { Actions } from 'react-native-router-flux';
 
 import Cabecera from '../../components/cabecera';
 import Pie from '../../components/pie'
-import AñosMeses from '../../components/añosMeses'
+import AñosMeses from './ams'
 import MovimientosHistorico from '../../components/movimientosHistorico'
 
 import * as literal from '../../constants/literales';
