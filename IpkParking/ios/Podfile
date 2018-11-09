@@ -9,11 +9,6 @@ target 'IpkParking' do
 
   pod 'Firebase/Core'
 
-  target 'IpkParking-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
   target 'IpkParkingTests' do
     inherit! :search_paths
     # Pods for testing
