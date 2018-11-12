@@ -13,7 +13,7 @@ import {
 import {Container,Content,Footer,Spinner} from 'native-base';
 
 import firebase from '../../lib/firebase';
-import notificacion from '../../lib/notificaciones';
+//import notificacion from '../../lib/notificaciones';
 import { Actions } from 'react-native-router-flux';
 
 import Cabecera from '../../components/cabecera';
@@ -145,7 +145,8 @@ export default class Parking extends Component {
     };  
   }
   componentDidMount(){   
-    this.getMaestros().then(()=> this.initNotificaciones());         // Vehiculos, Parcelas y Ususarios --> initNotificaciones
+    //this.getMaestros().then(()=> this.initNotificaciones());         // Vehiculos, Parcelas y Ususarios --> initNotificaciones
+    this.getMaestros();         // Vehiculos, Parcelas y Ususarios --> initNotificaciones
     firebase.onGetVehiculos(vehiculos=> this.setState({vehiculos})); // Cabecera con evento change estado Vehiculos 
     firebase.onGetParcelas(parcelas=>{ this.setState({parcelas});}); // Parcelas con evento change estado Parcelas  
   }
@@ -277,7 +278,7 @@ export default class Parking extends Component {
     return Usuario;
       
   }
-  initNotificaciones(){// NOTIFICACIONES  
+  /*initNotificaciones(){// NOTIFICACIONES  
     var usuarioKey=this.getKeyUsuarioByEmail(this.state.usuarios, this.props.email);
     this.setState({usuarioKey})
     notificacion.getToken().then((token)=>{ // Registramos el token del Usuario
@@ -286,7 +287,7 @@ export default class Parking extends Component {
         }
     }); 
     notificacion.listenerNotification();   //  Escuchamos Notificaciones
-  }
+  }*/
   getTokenUsuarioByEmail(usuarios, email){
 
     var tokenUsuario=''
