@@ -15,8 +15,7 @@ target 'IpkParking' do
   pod 'Firebase/Storage'
   pod 'Firebase/Messaging'
 
-  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
-  
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'  
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'IpkParkingTests' do    
