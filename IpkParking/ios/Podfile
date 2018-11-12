@@ -15,7 +15,7 @@ target 'IpkParking' do
   # pod 'Firebase/Storage'
   # pod 'Firebase/Messaging'
 
-  # pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
   
   target 'IpkParkingTests' do
     inherit! :search_paths
