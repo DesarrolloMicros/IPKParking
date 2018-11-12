@@ -11,7 +11,7 @@
     "firebase": "5.5.8",
     "native-base": "2.3.7",
     "react": "16.2.0",
-    "react-native": "0.52.2",
+    "react-native": "0.57.4",
     "react-native-fcm": "16.2.4",
     "react-native-modalbox": "1.4.2",
     "react-native-router-flux": "4.0.0-beta.28",
