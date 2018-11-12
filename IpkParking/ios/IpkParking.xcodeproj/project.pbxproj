@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		008F02AFF5F7400B9D0E08E6 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 381896AA64584A00897D0732 /* Octicons.ttf */; };
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
@@ -66,6 +65,7 @@
 		F596546B94AF4FA5B89F23E6 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58047AA6E9442049B0F362A /* Foundation.ttf */; };
 		FC166F43AA444C4CB1BECF09 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF12F84F76D74C7194667A92 /* Feather.ttf */; };
 		FF62ACCB6E9246E5A5DD56B1 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017FA61D81CA4986AC749381 /* Zocial.ttf */; };
+		175FF96F72D2472DB371BC56 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC478A5E2F5468587F592BC /* libRNFirebase.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +355,8 @@
 		EE5F23372A724CCB9C441507 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		F9ED35AB0D46453680D524AC /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		FF8006B1250541788033D4E2 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		CA7E2EE4CF644179B329F2C3 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; name = "RNFirebase.xcodeproj"; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		DEC478A5E2F5468587F592BC /* libRNFirebase.a */ = {isa = PBXFileReference; name = "libRNFirebase.a"; path = "libRNFirebase.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +389,7 @@
 				B281A64983FD4EAB8AD472CC /* libRNVectorIcons.a in Frameworks */,
 				4708768385174B89ADCDBEF9 /* libRNFIRMessaging.a in Frameworks */,
 				999AE61888787848BA9F222E /* libPods-IpkParking.a in Frameworks */,
+				175FF96F72D2472DB371BC56 /* libRNFirebase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +576,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				19B24C3DB9B14246819275E7 /* RNVectorIcons.xcodeproj */,
 				98B0D8ABF7BE4B88A8F72766 /* RNFIRMessaging.xcodeproj */,
+				CA7E2EE4CF644179B329F2C3 /* RNFirebase.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1283,12 +1287,14 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-vector-iconsRNVectorIconsManager",
 					"$(SRCROOT)..\node_modules\neact-native-fcmios",
+					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 				);
 				INFOPLIST_FILE = IpkParkingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1311,12 +1317,14 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-vector-iconsRNVectorIconsManager",
 					"$(SRCROOT)..\node_modules\neact-native-fcmios",
+					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 				);
 				INFOPLIST_FILE = IpkParkingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1340,6 +1348,7 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-vector-iconsRNVectorIconsManager",
 					"$(SRCROOT)..\node_modules\neact-native-fcmios",
+					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 				);
 				INFOPLIST_FILE = IpkParking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1363,6 +1372,7 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-vector-iconsRNVectorIconsManager",
 					"$(SRCROOT)..\node_modules\neact-native-fcmios",
+					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 				);
 				INFOPLIST_FILE = IpkParking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1393,11 +1403,13 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-vector-iconsRNVectorIconsManager",
 					"$(SRCROOT)..\node_modules\neact-native-fcmios",
+					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 				);
 				INFOPLIST_FILE = "IpkParking-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1430,11 +1442,13 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-vector-iconsRNVectorIconsManager",
 					"$(SRCROOT)..\node_modules\neact-native-fcmios",
+					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 				);
 				INFOPLIST_FILE = "IpkParking-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1468,6 +1482,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.IpkParking-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1493,6 +1508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

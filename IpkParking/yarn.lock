@@ -3569,6 +3569,10 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+opencollective-postinstall@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.1.tgz#798e83e168f7b91949061c2683f762af747f17cc"
+
 opencollective@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/opencollective/-/opencollective-1.0.3.tgz#aee6372bc28144583690c3ca8daecfc120dd0ef1"
@@ -3856,6 +3860,13 @@ prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prop-types@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  dependencies:
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 protobufjs@^5.0.0:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-5.0.2.tgz#59748d7dcf03d2db22c13da9feb024e16ab80c91"
@@ -3971,9 +3982,12 @@ react-native-easy-grid@0.1.15:
   dependencies:
     lodash "^4.11.1"
 
-react-native-fcm@13.3.1:
-  version "13.3.1"
-  resolved "https://registry.yarnpkg.com/react-native-fcm/-/react-native-fcm-13.3.1.tgz#cb5798daff2ad8f3e5803dc257960e0d9c3d425f"
+react-native-firebase@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-firebase/-/react-native-firebase-5.1.0.tgz#85c535394c8518840609aae15b3dd0c65d8d2c59"
+  dependencies:
+    opencollective-postinstall "^2.0.0"
+    prop-types "^15.6.2"
 
 react-native-iphone-x-helper@^1.0.1:
   version "1.0.2"
