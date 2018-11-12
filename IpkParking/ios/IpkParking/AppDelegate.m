@@ -6,10 +6,9 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
+#import <Firebase.h>
 
 #import "AppDelegate.h"
-
-#import <Firebase.h>
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
