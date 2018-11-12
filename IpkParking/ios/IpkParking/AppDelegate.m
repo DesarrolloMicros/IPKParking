@@ -9,7 +9,7 @@
 
 #import "AppDelegate.h"
 
-#import <Firebase.h>
+/*#import <Firebase.h>*/
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -23,7 +23,7 @@
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
   /**[FIRApp configure];**/
-  FirebaseApp.configure();
+  /**FirebaseApp.configure();**/
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"IpkParking"
