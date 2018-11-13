@@ -9,8 +9,7 @@
   "dependencies": {
     "firebase": "4.9.0",
     "react": "16.2.0",
-    "react-native": "0.52.2",
-    "react-native-firebase": "^5.1.0"
+    "react-native": "0.52.2"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
